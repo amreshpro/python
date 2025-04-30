@@ -525,3 +525,141 @@ Python divides the operators in the following groups:
 | `~`      | NOT                   | Inverts all the bits                                                        | `~x`       |
 | `<<`     | Zero fill left shift  | Shift left by pushing zeros in from the right, leftmost bits fall off       | `x << 2`   |
 | `>>`     | Signed right shift    | Shift right by pushing copies of the leftmost bit in, rightmost bits fall off | `x >> 2` |
+
+
+--- 
+
+### Datastructures
+Python provides several inbuilt (built-in) data structures that are powerful, versatile, and widely used. These can be categorized into two types:
+
+ 1. Primitive (Basic) Data Structures
+These are the most basic types.
+
+- int	Integer numbers	x = 5
+- float	Decimal numbers	pi = 3.14
+- bool	Boolean values	flag = True
+- str	String of characters	name = "Amresh"
+
+ 2. Non-Primitive (Advanced) Data Structures
+These are more complex and often used for data manipulation.
+
+🧱 A. Built-in Collection Data Structures
+Python provides 4 main built-in container data types:
+
+### List (Ordered, Mutable, Allows Duplicates)
+
+Syntax:
+
+```py
+ my_list = [1, 2, 3]
+```
+
+Features:
+
+- Ordered by insertion.
+
+- Mutable (can change elements).
+
+- Allows duplicates.
+
+Operations:
+
+```py
+
+my_list.append(4)
+my_list.remove(2)
+my_list[1] = 10
+my_list.sort()
+
+```
+
+---
+
+### Tuple (Ordered, Immutable, Allows Duplicates)
+Syntax:
+```py 
+my_tuple = (1, 2, 3)
+```
+
+Features:
+
+- Immutable (can't change once created).
+
+- Used as keys in dictionaries (if containing only immutables).
+
+```py
+x = my_tuple[0]
+len(my_tuple)
+my_tuple.count(2)
+```
+---
+
+### Set (Unordered, Mutable, No Duplicates)
+
+Syntax:
+```py
+ my_set = {1, 2, 3}
+```
+
+Features:
+
+- Unordered.
+
+- No duplicates.
+
+- Fast membership checking.
+
+
+
+```py
+my_set.add(4)
+my_set.remove(1)
+my_set.union({5, 6})
+my_set.intersection({2, 3})
+```
+
+---
+
+Dict (Key-Value Pairs, Unordered as of < Python 3.6, Ordered >= 3.7)
+Syntax: my_dict = {'a': 1, 'b': 2}
+
+Features:
+
+- Fast lookup by key.
+
+- Keys must be hashable (immutable types like int, str, tuple).
+
+
+```py
+my_dict['c'] = 3
+value = my_dict.get('a')
+del my_dict['b']
+keys = my_dict.keys()
+```
+
+
+### Match/Switch Case
+Instead of writing many if..else statements, you can use the match statement.
+
+The match statement selects one of many code blocks to be executed.
+
+```py
+
+day = 4
+match day:
+  case 1:
+    print("Monday")
+  case 2:
+    print("Tuesday")
+  case 3:
+    print("Wednesday")
+  case 4:
+    print("Thursday")
+  case 5:
+    print("Friday")
+  case 6:
+    print("Saturday")
+  case 7:
+    print("Sunday")
+    
+```
