@@ -1,6 +1,5 @@
 - Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
 
-* * *
 
 It is used for:
 
@@ -9,7 +8,6 @@ It is used for:
 - mathematics,
 - system scripting.
 
-* * *
 
 What can Python do?
 
@@ -23,9 +21,8 @@ What can Python do?
     
 - Python can be used for rapid prototyping, or for production-ready software development.(Prototyping का मतलब होता है – किसी आइडिया या प्रोजेक्ट का शुरुआती मॉडल (Model) या demo version बनाना, ताकि यह देखा जा सके कि वह असल में कैसे काम करेगा।).
     
-    * * *
     
-    Why Python?
+Why Python?
     
 - Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
     
@@ -38,39 +35,37 @@ What can Python do?
 - Python can be treated in a procedural way, an object-oriented way or a functional way.
     
 
-* * *
 
 #### First Program
 
 - Create a file with any name with extension .py
 - Write a code shown in below
-- Run by using command - `pyton fileName.py`
+- Run by using command - `python fileName.py`
 
 ```python
-    print("Hello, World!")
+print("Hello, World!")
 ```
 
 output
 
 ```bash
-    Hello, World!
+Hello, World!
 ```
 
-* * *
 
 ### Check Python Version
 
 ```bash
-    python --version
+python --version
 ```
 
 output
 
 ```bash
-    Python 3.10.2
+Python 3.10.2
 ```
 
-* * *
+
 
 ### Python Indentation
 
@@ -96,7 +91,7 @@ print("Five is greater than two!")
 
 output: File “demo_indentation_test.py”, line 2 print(“Five is greater than two!”) ^ IndentationError: expected an indented block
 
-* * *
+
 
 ### Comments
 
@@ -131,13 +126,11 @@ Bytecode in Python is an intermediate representation of Python source code that 
 - Bytecode files typically have the extension .pyc and are stored in a **pycache** directory. The purpose of bytecode is to speed up the execution of Python programs. When a Python script is run for the first time, it is compiled into bytecode, and the bytecode is saved to a .pyc file. The next time the script is run, the interpreter can load the bytecode from the .pyc file instead of recompiling the source code, which can save time.
 - Bytecode is platform-independent, meaning it can be run on any operating system with a compatible Python interpreter. However, bytecode is not machine code and cannot be executed directly by the CPU. It must be interpreted by the PVM.
 
-* * *
 
 ### Python Program Workflow
 
-![8784089862.jpeg](/photos/python-workflow.jpeg)
+![8784089862.jpeg](./photos/python-workflow.jpeg)
 
-* * *
 
 ### Variables
 
@@ -146,12 +139,12 @@ Bytecode in Python is an intermediate representation of Python source code that 
 - A variable is created the moment you first assign a value to it.
 
 ```py
-    x = 4       # x is of type int
-    y = "Akansha" # x is now of type str
-    z = True
-    a = 45.87
-    b = 'A'
-    print(x)
+x = 4       # x is of type int
+y = "Akansha" # y is now of type str
+z = True
+a = 45.87
+b = 'A'
+print(x)
 ```
 
 #### How to know type of a variable ?
@@ -159,13 +152,13 @@ Bytecode in Python is an intermediate representation of Python source code that 
 You can get the data type of a variable with the `type()` function.
 
 ```py
-    x = 5
-    y = "Amresh"
-    print(type(x)) # int
-    print(type(y)) # str
+x = 5
+y = "Amresh"
+print(type(x)) # int
+print(type(y)) # str
 ```
 
-> x = “Ram” is the same as x = ‘Ram’
+- x = “Ram” is the same as x = ‘Ram’
 
 #### Variable Name
 
@@ -199,7 +192,6 @@ my-var = "John"
 my var = "John"
 ```
 
-* * *
 
 Styles for Variable Creation
 
@@ -221,7 +213,6 @@ Each word is separated by an underscore character:
 
 `my_variable_name = "John"`
 
-* * *
 
 #### Many Values to Multiple Variables
 
@@ -229,12 +220,12 @@ Python allows you to assign values to multiple variables in one line:
 
 ```py
 x, y, z = "Orange", "Banana", "Cherry"
-print(x)
+print(x) 
 print(y)
 print(z)
 ```
 
-> Note: Make sure the number of variables matches the number of values, or else you will get an error.
+-  Note: Make sure the number of variables matches the number of values, or else you will get an error.
 
 #### One Value to Multiple Variables
 
@@ -249,9 +240,9 @@ print(z)
 
 #### Global Variable vs Local Variable
 
-![var-photo](/photos/var2.png)
+![var-photo](./photos/var2.png)
 
-![var](/photos/var.png)
+![var](./photos/var.png)
 
 
 ### Reserved Keyword in Python
@@ -282,26 +273,23 @@ Python has the following data types built-in by default, in these categories:
 
 
 
-
-
-| Example | Data Type |  
-|----------------------------------------------|--------------|  
-| x = "Hello World" | str |  
-| x = 20 | int |  
-| x = 20.5 | float |  
-| x = 1j | complex |  
-| x = \["apple", "banana", "cherry"\] | list |  
-| x = ("apple", "banana", "cherry") | tuple |  
-| x = range(6) | range |  
-| x = {"name" : "Amresh", "age" : 25} | dict |  
-| x = {"apple", "banana", "cherry"} | set |  
-| x = frozenset({"apple", "banana", "cherry"}) | frozenset |  
-| x = True | bool |  
-| x = b"Hello" | bytes |  
-| x = bytearray(5) | bytearray |  
-| x = memoryview(bytes(5)) | memoryview |  
-| x = None | NoneType |
-
+| Example                                      | Data Type |
+|---------------------------------------------|-----------|
+| x = "Hello World"                            | str       |
+| x = 20                                       | int       |
+| x = 20.5                                     | float     |
+| x = 1j                                       | complex   |
+| x = ["apple", "banana", "cherry"]           | list      |
+| x = ("apple", "banana", "cherry")           | tuple     |
+| x = range(6)                                 | range     |
+| x = `{"name" : "Amresh", "age" : 25}`         | dict      |
+| x = `{"apple", "banana", "cherry"} `          | set       |
+| x = frozenset(`{"apple", "banana", "cherry"}`)| frozenset |
+| x = True                                     | bool      |
+| x = b"Hello"                                 | bytes     |
+| x = bytearray(5)                             | bytearray |
+| x = memoryview(bytes(5))                     | memoryview|
+| x = None                                     | NoneType  |
 
 
 ### Casting
@@ -326,3 +314,214 @@ z = str(3.0)  # z will be '3.0'
 
 ```
 
+
+### Strings
+Strings in python are surrounded by either single quotation marks, or double quotation marks.
+
+'hello' is the same as "hello".
+
+##### Multiline Strings
+```py
+a = """Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua."""
+print(a)
+```
+
+###### Slicing
+```py
+b = "Hello, World!"
+print(b[2:5]) # llo
+```
+
+###### LowerCase UpperCase
+
+```py
+ a = "Hello, World!"
+print(a.upper()) #HELLO, WORLD!
+print(a.lower()) # hello, world!
+```
+###### Strip
+The strip() method removes any whitespace from the beginning or the end:
+
+```py
+a = " Hello, World! "
+print(a.strip()) # returns "Hello, World!"
+```
+
+##### String Concatenation
+To concatenate, or combine, two strings you can use the + operator.
+
+Merge variable a with variable b into variable c:
+
+```py
+a = "Hello"
+b = "World"
+c = a + b
+print(c)
+```
+
+##### String Format
+As we learned in the Python Variables chapter, we cannot combine strings and numbers like this:
+
+Gives Error
+```py
+age = 36
+txt = "My name is Rakesh, I am " + age
+print(txt) # error
+```
+
+output:
+```bash
+Traceback (most recent call last):
+  File "myfile.py", line 2, in <module>
+    txt = "My name is Rakesh, I am " + age
+TypeError: must be str, not int
+```
+
+To fix this problem use F String
+
+```py
+age = 36
+txt = f"My name is John, I am {age}"
+print(txt)
+```
+
+##### Escape Sequence
+
+```py
+name = "My name is "Amresh". I am from Gurugram"
+print(name) # gives error
+```
+
+```py
+name = "My name is \"Amresh\". I am from Gurugram"
+print(name) # My name is "Amresh". I am from Gurugram
+```
+
+--- 
+### Boolean
+Booleans represent one of two values: True or False.
+
+```py
+print(10 > 9) # True
+print(10 == 9) # False
+print(10 < 9) # False
+```
+
+example:
+```py
+age = int(input("enter your age:"))
+if age >= 18:
+  print("You can vote")
+else:
+  print("You can not vote")
+```
+
+### Truthy and falsy values
+
+#### Truthy:
+- Almost any value is evaluated to True if it has some sort of content.
+
+- Any string is True, except empty strings.
+
+- Any number is True, except 0.
+
+- Any list, tuple, set, and dictionary are True, except empty ones.
+
+#### Falsy:
+ - empty values, such as (), [], {}, "", False, the number 0, and the value None  evaluates to False.
+ The following will return False:
+
+```py
+bool(False)
+bool(None)
+bool(0)
+bool("")
+bool(())
+bool([])
+bool({})
+```
+
+--- 
+
+### Operators
+Python divides the operators in the following groups:
+
+- Arithmetic operators
+- Assignment operators
+- Comparison operators
+- Logical operators
+- Identity operators
+- Membership operators
+- Bitwise operators
+
+#### Arithmetic 
+
+| Operator | Name            | Example    |
+|----------|-----------------|------------|
+| `+`      | Addition        | `x + y`    |
+| `-`      | Subtraction     | `x - y`    |
+| `*`      | Multiplication  | `x * y`    |
+| `/`      | Division        | `x / y`    |
+| `%`      | Modulus         | `x % y`    |
+| `**`     | Exponentiation  | `x ** y`   |
+| `//`     | Floor division  | `x // y`   |
+
+
+#### Assignment
+| Operator | Example         | Same As       |
+|----------|-----------------|---------------|
+| `=`      | `x = 5`         | `x = 5`       |
+| `+=`     | `x += 3`        | `x = x + 3`   |
+| `-=`     | `x -= 3`        | `x = x - 3`   |
+| `*=`     | `x *= 3`        | `x = x * 3`   |
+| `/=`     | `x /= 3`        | `x = x / 3`   |
+| `%=`     | `x %= 3`        | `x = x % 3`   |
+| `//=`    | `x //= 3`       | `x = x // 3`  |
+| `**=`    | `x **= 3`       | `x = x ** 3`  |
+| `&=`     | `x &= 3`        | `x = x & 3`   |
+| `|=`     | `x |= 3`        | `x = x | 3`   |
+| `^=`     | `x ^= 3`        | `x = x ^ 3`   |
+| `>>=`    | `x >>= 3`       | `x = x >> 3`  |
+| `<<=`    | `x <<= 3`       | `x = x << 3`  |
+| `:=`     | `print(x := 3)` | `x = 3; print(x)` |
+
+
+#### Comparison
+| Operator | Name                        | Example    |
+|----------|-----------------------------|------------|
+| `==`     | Equal                       | `x == y`   |
+| `!=`     | Not equal                   | `x != y`   |
+| `>`      | Greater than                | `x > y`    |
+| `<`      | Less than                   | `x < y`    |
+| `>=`     | Greater than or equal to    | `x >= y`   |
+| `<=`     | Less than or equal to       | `x <= y`   |
+
+
+#### Logical
+
+| Operator | Description                                  | Example                          |
+|----------|----------------------------------------------|----------------------------------|
+| `and`    | Returns True if both statements are true     | `x < 5 and x < 10`               |
+| `or`     | Returns True if one of the statements is true| `x < 5 or x < 4`                 |
+| `not`    | Reverses the result                          | `not(x < 5 and x < 10)`          |
+
+#### Identity 
+| Operator  | Description                                             | Example       |
+|-----------|---------------------------------------------------------|---------------|
+| `is`      | Returns True if both variables are the same object      | `x is y`      |
+| `is not`  | Returns True if both variables are not the same object  | `x is not y`  |
+
+
+#### Bitwise
+
+| Operator | Name                  | Description                                                                 | Example    |
+|----------|-----------------------|-----------------------------------------------------------------------------|------------|
+| `&`      | AND                   | Sets each bit to 1 if both bits are 1                                       | `x & y`    |
+| `|`      | OR                    | Sets each bit to 1 if one of two bits is 1                                  | `x | y`    |
+| `^`      | XOR                   | Sets each bit to 1 if only one of two bits is 1                             | `x ^ y`    |
+| `~`      | NOT                   | Inverts all the bits                                                        | `~x`       |
+| `<<`     | Zero fill left shift  | Shift left by pushing zeros in from the right, leftmost bits fall off       | `x << 2`   |
+| `>>`     | Signed right shift    | Shift right by pushing copies of the leftmost bit in, rightmost bits fall off | `x >> 2` |
