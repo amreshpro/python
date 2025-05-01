@@ -528,6 +528,17 @@ Python divides the operators in the following groups:
 
 
 --- 
+### If Else Statement
+
+```py
+a = 33
+b = 33
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal") 
+```
+---
 
 ### Datastructures
 Python provides several inbuilt (built-in) data structures that are powerful, versatile, and widely used. These can be categorized into two types:
@@ -543,7 +554,7 @@ These are the most basic types.
  2. Non-Primitive (Advanced) Data Structures
 These are more complex and often used for data manipulation.
 
-🧱 A. Built-in Collection Data Structures
+ A. Built-in Collection Data Structures
 Python provides 4 main built-in container data types:
 
 ### List (Ordered, Mutable, Allows Duplicates)
@@ -663,3 +674,76 @@ match day:
     print("Sunday")
     
 ```
+
+---
+
+### Loops
+
+In Python, loops are used to execute a block of code repeatedly. There are two main types of loops in Python:
+
+- 1. for Loop
+Used to iterate over a sequence (like a list, tuple, string, or range).
+
+
+
+Example:
+```py
+for i in range(5):
+    print(i)
+```
+Output:
+```bash
+0
+1
+2
+3
+4
+```
+
+Looping over a list:
+
+```py 
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+```
+- 2. while Loop
+Repeats as long as a condition is True.
+
+```py
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+ ```   
+Output:
+```py
+0
+1
+2
+3
+4
+```
+Additional Keywords:
+break – exits the loop early
+
+continue – skips the current iteration
+
+else – can be used with both for and while loops
+
+
+```py
+for i in range(10):
+    if i == 5:
+        break  # exits loop
+    if i % 2 == 0:
+        continue  # skips even numbers
+    print(i)
+```
+
+### Membership Operator
+The membership operators are useful to test for membership in a sequence such as string, lists, tuples and dictionaries. 
+There are two type of Membership operator:-
+- `in `
+- `not in`
+
