@@ -1,3 +1,4 @@
+# Python 3
 - Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
 
 
@@ -19,7 +20,7 @@ What can Python do?
     
 - Python can be used to handle big data and perform complex mathematics.
     
-- Python can be used for rapid prototyping, or for production-ready software development.(Prototyping का मतलब होता है – किसी आइडिया या प्रोजेक्ट का शुरुआती मॉडल (Model) या demo version बनाना, ताकि यह देखा जा सके कि वह असल में कैसे काम करेगा।).
+- Python can be used for rapid prototyping, or for production-ready software development.(Prototyping means – any idea or projects beginner/starting model or demo version ).
     
     
 Why Python?
